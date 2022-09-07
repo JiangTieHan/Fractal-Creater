@@ -1,6 +1,5 @@
 #pragma once
 #include <string>;
-#include <iostream>
 #include <cstdint>
 #include <memory>
 #include "Mandelbrot.h"
@@ -24,10 +23,14 @@ public:
 	FractalCreator(int width, int height);
 	~FractalCreator();
 
+private:
 	void calculateIteration();
 	void calculateTotalIterations();
 	void drawFractal();
 	void addZoom(const Zoom& zoom);
 	void writeBitMap(std::string name);
+
+public:
+	void run(std::string name);
 };
 
