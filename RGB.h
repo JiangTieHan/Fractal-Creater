@@ -6,6 +6,7 @@ struct RGB
 	double g;
 	double b;
 
+	RGB();
 	RGB(double r, double g, double b);
 };
 
